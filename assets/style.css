@@ -1,0 +1,15 @@
+body{
+  padding-bottom: 200px;
+}
+
+
+input{
+  margin: 10px
+}
+
+label{
+  margin-left: 10px;
+}
+.label{
+  margin: 0 10px ;
+}

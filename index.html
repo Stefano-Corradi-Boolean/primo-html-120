@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primo HTML</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -34,10 +35,10 @@
   <!-- lista non ordinata  -->
   <h3>Lista non ordinata</h3>
   <ul>
-    <li>elemnto lista</li>
-    <li>elemnto lista</li>
-    <li>elemnto lista</li>
-    <li>elemnto lista</li>
+    <li>elemnto della lista</li>
+    <li>elemnto della lista</li>
+    <li>elemnto della lista</li>
+    <li>elemnto della lista</li>
   </ul>
 
   <button>sono un bottone</button>
@@ -55,7 +56,7 @@
   <!-- grassetto -->
   <strong>Grassetto con strong</strong>
   <b>Grassetto con b</b>
-
+  
   <!-- il div deve essere utilizzato come contenitore  -->
   <div>
     <h4>Titolo de div</h4>
@@ -64,15 +65,16 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed accusamus commodi nesciunt pariatur sit impedit odio fugiat. Pariatur repellendus reprehenderit nam asperiores aspernatur suscipit tenetur facilis qui quis tempore?
     </p>
     <ul>
-      <li>elemnto lista</li>
-      <li>elemnto lista</li>
-      <li>elemnto lista</li>
-      <li>elemnto lista</li>
-      <li>elemnto lista</li>
-      <li>elemnto lista</li>
+      <li>elemnto della lista.</li>
+      <li>elemnto della lista.</li>
+      <li>elemnto della lista.</li>
+      <li>elemnto della lista.</li>
+      <li>elemnto della lista.</li>
+      <li>elemnto della lista.</li>
+      <li>elemnto della lista.</li>
     </ul>
   </div>
-
+  
   <!-- contenitore 1  -->
   <div>
     <h3>Contenitore 1</h3>
@@ -154,27 +156,60 @@
    <!-- gallery  -->
    <section>
     <div>
-      <h4>Polli</h4>
+      <h4>Polli!</h4>
       <!-- immagine con persorso relativo  -->
-      <img src="img/polli.jpg" alt="Polli" width="300">
+      <img src="assets/img/polli.jpg" alt="Polli" width="300">
     </div>
     <div>
-      <h4>Orsi</h4>
+      <h4>Orsi!</h4>
       <!-- immagine con persorso relativo  -->
-      <img src="./img/orsi.jpg" alt="Orsi" width="300">
+      <img src="./assets/img/orsi.jpg" alt="Orsi" width="300">
     </div>
     <div>
-      <h4>Pigna</h4>
+      <h4>Pigna!</h4>
       <!-- immagine con persorso relativo  -->
       <img src="./assets/img/pigna.jpg" alt="Pigna" width="300">
     </div>
     <div>
-      <h4>Uccellino</h4>
+      <h4>Uccellino!</h4>
       <!-- immagine con persorso assoluto  -->
       <!-- SBAGLIATO!! NON USARE MAI IL PERCORSO ASSOLUTO!! -->
-      <img src="/img/uccellino.jpg" alt="Uccellino" width="300">
+      <img src="/assets/img/uccellino.jpg" alt="Uccellino" width="300">
     </div>
    </section>
+
+
+   <!-- FORM  -->
+
+   <form action="#" method="GET">
+    <label for="">Inserire il nome</label><br>
+    <input type="text" placeholder="Nome"> <br>
+    <label for="">Inserire il cognome</label><br>
+    <input type="text" placeholder="Cognome"> <br>
+    <label for="">Inserire l'email</label><br>
+    <input type="email" placeholder="Email" required> <br>
+    <label for="">Inserire l'età</label><br>
+    <input type="number" placeholder="Età"> <br>
+    <p class="label" >Colore preferito</p>
+    <input type="radio" name="fav-color" id="red"> <label for="red">Rosso</label>
+    <input type="radio" name="fav-color" id="green"> <label for="green">Verde</label>
+    <input type="radio" name="fav-color" id="blue"> <label for="blue">Blu</label>
+    <p class="label" >Hobbies</p>
+    <input type="checkbox" id="cook"> <label for="cook">Cucina</label>
+    <input type="checkbox" id="surf"> <label for="surf">Surf</label>
+    <input type="checkbox" id="dev"> <label for="dev">Programmazione</label>
+    <br>
+    <label >Titolo di studio</label><br>
+    <select>
+      <option value="">Insierire un titolo di studio</option>
+      <option value="">Licenza media</option>
+      <option value="">Maturità superiore</option>
+      <option value="">Laurea breve</option>
+      <option value="">Laurea magistrale</option>
+    </select>
+
+    <br><button type="submit">INVIA</button>
+   </form>
 
 
   
